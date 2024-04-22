@@ -1,0 +1,10 @@
+wxPython
+robotframework-ride
+-r requirements.txt
+robotframework-metrics
+python-docx
+matplotlib
+plotly
+beautifulsoup4
+tabulate
+pdf2docx

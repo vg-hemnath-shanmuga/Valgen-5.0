@@ -1,0 +1,146 @@
+Data to be created:
+
+1)Site:
+	Canada
+2)Role: 
+	Manager
+3)Dept:
+	Manual Tester
+4)Job Title:
+	Job Title
+5)Users:
+	1)hem tester[hem]
+	2)shan tester[shan]
+	3)grand tester[grand]
+	4)demo tester[demo]
+6)Category:
+	1)Equipment
+7)SubCategory:
+	1)Lab Equipment-[Category]-Equipment
+8)Esign Reason:
+	1)Initiation
+	2)Routings
+	3)Route for Review
+	4)Assess
+9)Group:
+	1)Hem Grp1-demo,shan,hem
+	2)Hem Grp2-hem,shan,grand
+	3)Approver Group-All users
+	4)Author Group-All users
+	5)Reviewer Group-All users
+	6)Author-All users
+10)Functional Role:
+	1)Functional Approver
+        2)Functional Reviewer
+11)Workflow:
+	1) Hem WF-Reviewer-1) Approver Group-Parallel 2) Approver Group-hem-Parallel
+		  Approval-1) Approver Group-Serial
+	2) Single WF-Reviewer-1) Approver Group-Serial
+		     Approval-1) Approver Group-Serial
+12)Form:
+	1)Framework Form-[Framework Form]- with text box as control
+	2)Standard Form-[Standard Form]- with text box as control
+	3)Exception Form-01-[Exception Form]- with text area as controls
+	4)Project Form-[PFRM]-TextBox,TextArea,CheckBox{Option1,Option2},Radio Button{Option1,Option2},Dropdown,Date(All as optional)
+	5)Internal Process Map-[IPM]-CCR Owner and Section with TxtBox,{Assigned To-Group}[Hem Grp1]
+13)Content Type:
+	1)Functional Requirement Specification
+	2)Operational Qualification
+	3)Performance Qualification
+	4)User Requirement Specification
+	5)Negative Testcase
+	6)Positive Testcase
+	7)Design Qualification
+	8)Standard Operating Procedure - Non Exe
+14)Entity Status:
+	Impacted
+	Inactive
+	Pending
+	Qualified
+	Retired
+	Validated
+	WIP
+	Verified
+15)Validation Framework:
+	1)Robot FW-[Deliverables]-1)Functional Requirement Specification- Mandatory
+				  2)Operational Qualification- Optional
+16)Entity Type:
+	1)Robot Entity Type-with framework[Robot FW]
+	2)EQ LHB-without framework
+17)Entity:
+	1)Blender-[Entity Type]-Robot Entity Type,[Category]-Equipment,[SubCategory]-Lab Equipment
+	2)Pipette-[Entity Type]-EQ LHB,[Category]-Equipment,[SubCategory]-Lab Equipment
+	3)Distillation Equipment-[Entity Type]-EQ LHB,[Category]-Equipment,[SubCategory]-Lab Equipment
+	4)DesignEnt-[Entity Type]-Robot Entity Type,[Category]-Equipment,[SubCategory]-Lab Equipment
+18)Table:
+	1) 7 column table (columns should match with Import document in Entity based Content library)
+19)Keyword Mapping:
+	ID-ID
+	Instructions-Description
+	Test Data-Reference
+	Expected Result-Expected Result
+	Reference-Executable without Audit trail
+	Actual Result-Result without Audit trail
+	Result-Witnessed and Verified by
+	No-ID
+	Description-Description
+	#-ID
+	Comments-Comments without Audit trail
+20)Document:
+	1)FRS for pipette entity
+	2)URS for pipette entity
+	3)OQ for pipette entity
+	4)PQ for pipette entity
+	5)FRS for Distillation Equipment entity
+	6)OQ for Distillation Equipment entity
+	7)DQ for pipette entity
+21)Approved Content Library: (Entity Based)
+	1)FRS for pipette entity - Approved Content Library
+22)Trace Model:
+	1)Requirement Executable Trace- Functional Requirement Specification->Operational Qualification
+23)Bind TraceModel:
+	1)Bind above TraceModel with Category level
+24)RTM:
+	1)Trace Matrix Test-[Distillation Equipment] for [Requirement Executable Trace] Trace
+25)Template Group:
+	Temp_Group
+26)Template:
+	1)Executable Template-Executable Type
+	2)Test-Report Type
+	3)Requirement Temp w/o-Requirement Type
+	4) Assessment Plan Test-Assessment Plan template for Non-Executable
+27)Bind Template:
+	1)Bind Category level for all 4 Content Type
+28)Risk Process:
+	1) Functional [RP-CND-0001.01] - Enforce screenshot at every step level
+29)Risk Model:
+	1) Custom Risk Model_1
+	2) FMEA RM
+30)Risk Framework:
+	1) Risk (CND-RA-0001.01)
+31)Validation Standard:
+	1)VS
+32)Decision Tree:	
+	1) CND-DT-0004.01 [DT Name1]
+	2) CND-DT-0005.01 [Risk DT]
+	3) CND-DT-0006.01 [VA DT]
+33)Bind Decision Tree:
+	1) Bind Content generation DT with Category
+34)Section:
+	1) CND-PA-0001.01 [GxP Section] - Group1
+	2) CND-PA-0002.01 [RA Section] - Group1
+	3) CND-PA-0003.01 [VA Section] - Group1
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Unique ID:                       
+	{Entity Version Format}-Release Details-With 4 levels-[Level 1]-Major,Ma,01
+							      [Level 2]-Minor,Mi,012,Dot
+							      [Level 3]-Patch,P,01,Dot
+							      [Level 4]-Special Pack,SP,01,Dot
+	{DM Content ID Configuration}-Schema Type-(<Content type Prefix>,<Starting S.No.>,<Step ID.>,<Version No.>),Dot,3,001
+Execution:
+Dev-18623.pdf
+Exe-5590.pdf
+
+509428
+18002004030
